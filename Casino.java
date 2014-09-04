@@ -8,9 +8,6 @@
  * 	of spins needed to hit the jackpot. Hypothetically, should the program be
  * 	run an infinite number of times, the histogram should be shown as a smooth
  * 	curve.
- * 
- *  @author Daniel Wang
- *  @version August 23, 2014
  */
 
 public class Casino {
