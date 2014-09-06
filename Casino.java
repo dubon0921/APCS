@@ -17,12 +17,12 @@ public class Casino {
 										 greatestaverage, spinsperasterik;
 							// numberofsides = number of sides the wheel has
 							// numberoftrials = number of trials run to be run (given by user)
-						    // average = average number of spins for each number of sides 
+						        // average = average number of spins for each number of sides 
 							// numberofspins = the number of spins needed to reach a jackpot for a particular trial
-						    // sum = total number of spins added from each trial for a given number of sides
+						        // sum = total number of spins added from each trial for a given number of sides
 							// greatestaverage = the greatest average number of spins (to be used for histogram)
 							// spinsperasterik = value determined by dividing the greatest average by 60
-						    // in order to find out the number of spins needed to print 1 asterik for the histogram
+						        // in order to find out the number of spins needed to print 1 asterik for the histogram
 					
 					
 	// stores the number of spins for each trial for a given # of 
