@@ -2,9 +2,6 @@
  *  You have a Jackpot machine. There are four "wheels" showing
  *  numbers. Prompt the user for the number of sides of each wheel.
  *  The machine generates four numbers until all four are the same.
- *
- *  @author Mr Greenstein
- *  @version August 20, 2014
  */
 
 public class LittleJackpot
