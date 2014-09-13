@@ -1,9 +1,6 @@
 /**
  *  This program is an example of different parameter passing and the
  *  effects of accessing and changing data.
- *
- *  @author Mr Greenstein
- *  @version August 27, 2014
  */
 
 public class Parameters {
