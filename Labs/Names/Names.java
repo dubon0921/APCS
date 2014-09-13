@@ -1,4 +1,4 @@
-/** Based off of a list of the most popular baby names from 1900-2000,
+/**     Based off of a list of the most popular baby names from 1900-2000,
  * 	the user can enter a name in order to find its popularity within
  * 	the 100 year span. A popularity index for the 100 years will be shown
  * 	with 10 year increments. Also, a chart of popularity is printed.
