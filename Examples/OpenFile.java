@@ -6,9 +6,6 @@ import java.util.Scanner;
 
 /**
  * Utilities for reading and writing files.
- *
- * @author Daniel Wang
- * @version September 8, 2014
  */
  
  public class OpenFile {
