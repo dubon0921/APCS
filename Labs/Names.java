@@ -2,12 +2,10 @@
  * 	the user can enter a name in order to find its popularity within
  * 	the 100 year span. A popularity index for the 100 years will be shown
  * 	with 10 year increments. Also, a chart of popularity is printed.
- *  On the y-axis of the chart, there are numbers denoting the popularity
+ 	On the y-axis of the chart, there are numbers denoting the popularity
  * 	in increments of 20 (a lower number in this case denotes a high 
  * 	popularity). On the x-axis is the years from 1900-2000 in ten year 
  * 	increments. 
- *  @author Daniel Wang
- *  @version September 3, 2014
  */
 
 import java.io.File;
