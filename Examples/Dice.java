@@ -2,9 +2,6 @@
  *  Simulates a single die.  The die has a number of
  *  sides, it can be rolled, and it keeps its own
  *  roll count.
- *
- *  @author Daniel Wang
- *  @version  August 20, 2014
  */
 
 public class Dice
