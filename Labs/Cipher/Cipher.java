@@ -2,9 +2,6 @@
  *  using a very simple cipher. In the key file, each letter in the alphabet
  *  has a corresponding letter that will replace it if a text file is 
  * 	encrypted and vice versa if a text file is decrypted.
- * 
- * 	@author Daniel Wang
- *  @version September 10, 2014
  */
 
 import java.util.Scanner;
