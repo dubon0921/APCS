@@ -6,9 +6,6 @@ import java.util.Scanner;
  *  our programs can recover from "bad" input,
  *  and also provide a way to limit numerical
  *  input to a range of values.
- *
- *  @author  Daniel Wang
- *  @version  August 21, 2014
  */
 
 public class Prompt
