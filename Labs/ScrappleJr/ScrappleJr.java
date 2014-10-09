@@ -1,16 +1,5 @@
 import java.util.Scanner;
 
-/** This game is a more simplistic version of the popular game Scrabble. There is a pre-
- * 	define pool of tiles that both the player and computer will be given letters from.
- * 	Both the player and computer are given 8 random letters to start off the game and 
- * 	the player must attempt to create a valid 4 to 8 letter word according the the
- * 	provided word list. Each letter corresponds to a point value and at the end of the game,
- * 	the person with the greater number of points wins the game.
- *
- *  @ Daniel Wang
- *  @ September 29, 2014
- */
-
 public class ScrappleJr {
 	public static int playerScore, computerScore; // the scores of the player and computer
 	public boolean endOfGame;            		  // boolean indicated whether the end of the game
