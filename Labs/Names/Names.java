@@ -20,12 +20,12 @@ public class Names {
 	int[][] results = new int[50][11]; 
 	
 	boolean nameFound; // boolean denoting whether the name the user typed was found
-					   // in the text file
+			   // in the text file
 	String name, temp;
 	
 	public Names( ) { // initialize fields
 		textFile = new File("names.txt"); // the text file being read from with the list
-										  // of the most popular names and their rank
+						  // of the most popular names and their rank
 		name = "name";
 	} // class Names constructor
 	
@@ -45,18 +45,18 @@ public class Names {
 			scanner = new Scanner(textFile); // associate scanner with names.txt
 			
 			userInput = new Scanner(System.in); // associate userInput scanner with
-												// what the user types
+							    // what the user types
 			System.out.print("Please enter the name you're looking for -> ");
 			
 			// assign variable typedName to what the user types
 			String typedName = userInput.next(); 
 			
 			scanner.useDelimiter(" "); // seperate different elements in a given line		
-									   // using a space
+						   // using a space
 			
 			while(scanner.hasNextLine()) { // while there's another line in the text file...
-				// if there is more in a given line, assign the next element to the 
-				// variable name
+						       // if there is more in a given line, assign the next element to the 
+						       // variable name
 				if (scanner.hasNext()) name = scanner.next(); 
 				
 				// if the element found in the array matches the typed name...				
