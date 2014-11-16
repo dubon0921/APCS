@@ -19,15 +19,15 @@ public class Cipher {
 				// createdtextfile = name of the new text file that will contain
 				// the encrypted (or decrypted) text
 	char[][]encryptarray; // the char array containing the letters a-z in the first column
-						  // and their corresponding letters in the second column if the 
-						  // text file is to be encrypted
+			      // and their corresponding letters in the second column if the 
+			      // text file is to be encrypted
 	char[][]decryptarray; // the char array containing the letters a-z in the second column and
-						  // their corresponding letters in the first colum nif the text file is 
-					      // to be decrypted
+			      // their corresponding letters in the first colum nif the text file is 
+			      // to be decrypted
 	boolean encrypt; // boolean determining if a text file is being encrypted or decrypted
 	Scanner keyscanner, textscanner, printscanner; 
-									 // the scanners that read the key file and the text file containing the 
-									 // text to be encrypted (or decrypted), respectively
+			// the scanners that read the key file and the text file containing the 
+			// text to be encrypted (or decrypted), respectively
 									 
 	public Cipher() { // initialize the values of all fields 
 		encrypt = true;
@@ -86,7 +86,7 @@ public class Cipher {
 		
 		keyscanner = OpenFile.openToRead(keytextfile); // scanner that reads the key file
 		textscanner = OpenFile.openToRead(textfileread); // scanner that reads the text file that is to be
-														 // encrypted (or decrypted)
+								 // encrypted (or decrypted)
 			
 		PrintWriter pw = OpenFile.openToWrite(createdtextfile); // print writer that will write the new encrypted
 																// (or decrypted) text file
@@ -95,14 +95,14 @@ public class Cipher {
 			if (keyscanner.hasNext()) { // if there is another element in a given line of the key file...
 				line = keyscanner.nextLine();
 				encryptarray[linecount][0] = line.charAt(0);  // assign the 1st character of each line in the key
-															  // file to the first column of the encrypt array
+									      // file to the first column of the encrypt array
 				encryptarray [linecount][1] = line.charAt(3); // assign the 4th character of each line in the key
-															  // file to the second column of the encrypt array
+									      // file to the second column of the encrypt array
 				
-				decryptarray[linecount][0] = line.charAt(3);// assign the 4th character of each line in the key
-															 // file to the second column of the decrypt array
-				decryptarray[linecount][1] = line.charAt(0);// assign the 1st character of each line in the key
-															 // file to the first column of the decrypt array
+				decryptarray[linecount][0] = line.charAt(3); // assign the 4th character of each line in the key
+								  	     // file to the second column of the decrypt array
+				decryptarray[linecount][1] = line.charAt(0); // assign the 1st character of each line in the key
+									     // file to the first column of the decrypt array
 			} // if statement
 			
 			else if (keyscanner.hasNextLine())keyscanner.nextLine();
@@ -110,9 +110,9 @@ public class Cipher {
 		} // while
 		
 		while (textscanner.hasNextLine()) { // while there is another line in the text file that
-											// is to be encrypted (or decrypted)...
+						   // is to be encrypted (or decrypted)...
 			if (textscanner.hasNext()) {     // if there is another element in the text file in a given line
-											 // of the text file that is to be encrypted (or decrypted)...
+						         // of the text file that is to be encrypted (or decrypted)...
 				oneline = textscanner.nextLine();
 				chararray = oneline.toCharArray();
 				
@@ -141,7 +141,7 @@ public class Cipher {
 							for (int t = 0; t < 26; t++) {
 								if (chararray[q] == encryptarray[t][0]) { // if a particular character in a line matches
 																		  // one in the encrypt array... (it should)
-									newchar = encryptarray[t][1];		  // replace the character with its corresponding character in the
+									newchar = encryptarray[t][1]; // replace the character with its corresponding character in the
 																		  // second column of the array
 									pw.print(newchar); // print the new character into the text file
 								} // if statement
@@ -150,8 +150,8 @@ public class Cipher {
 						else if (oneline.isEmpty())pw.println();
 						
 						else pw.print(chararray[q]); // if the character in the text file is neither an
-													 // upper/lower case letter, simply print that character
-													 // into the new text file
+									     // upper/lower case letter, simply print that character
+									     // into the new text file
 							
 					} // if statement
 					else { // if the user wants to decrypt rather than encrypt...
@@ -182,8 +182,8 @@ public class Cipher {
 						else if (oneline.isEmpty())pw.println();
 						
 						else pw.print(chararray[q]); // if the character in the text file is neither an
-													 // upper/lower case letter, simply print that character
-													 // into the new text file
+									     // upper/lower case letter, simply print that character
+									     // into the new text file
 					} // else statement
 				} // for loop
 				pw.println(); // return to the next line when each line in the original text file has been red
