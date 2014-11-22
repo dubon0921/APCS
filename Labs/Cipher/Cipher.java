@@ -1,7 +1,7 @@
 /** This program allows the user to either encrypt/decrypt a text file
  *  using a very simple cipher. In the key file, each letter in the alphabet
  *  has a corresponding letter that will replace it if a text file is 
- * 	encrypted and vice versa if a text file is decrypted.
+ *  encrypted and vice versa if a text file is decrypted.
  */
 
 import java.util.Scanner;
@@ -44,7 +44,7 @@ public class Cipher {
 	
 	/** This method obtains the name of the key file, text file to be encrypted, and
 	 * 	the new text file which will contain the encrypted (or decrypted) text from
-	 *  the user by using a scanner. Also, a number (1 or 2) is obtained by the user
+	 *      the user by using a scanner. Also, a number (1 or 2) is obtained by the user
 	 * 	which determines if the text file is to be encrypted or decrypted.
 	 */
 	public void GetInput() {
@@ -82,7 +82,7 @@ public class Cipher {
 		char origchar = 'x'; // the original character in the text to be read
 		char newchar = 'x';  // the new converted character in the new text file to be created
 		int linecount = 0;   // integer representing the current line of the text file
-						     // that is being read
+				     // that is being read
 		
 		keyscanner = OpenFile.openToRead(keytextfile); // scanner that reads the key file
 		textscanner = OpenFile.openToRead(textfileread); // scanner that reads the text file that is to be
