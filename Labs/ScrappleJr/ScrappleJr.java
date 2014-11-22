@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
 /** This game is a more simplistic version of the popular game Scrabble. There is a pre-
- * 	define pool of tiles that both the player and computer will be given letters from.
- * 	Both the player and computer are given 8 random letters to start off the game and 
- * 	the player must attempt to create a valid 4 to 8 letter word according the the
- * 	provided word list. Each letter corresponds to a point value and at the end of the game,
- * 	the person with the greater number of points wins the game.
+ *  define pool of tiles that both the player and computer will be given letters from.
+ *  Both the player and computer are given 8 random letters to start off the game and 
+ *  the player must attempt to create a valid 4 to 8 letter word according the the
+ *  provided word list. Each letter corresponds to a point value and at the end of the game,
+ *  the person with the greater number of points wins the game.
  */
 
 public class ScrappleJr {
 	public static int playerScore, computerScore; // the scores of the player and computer
-	public boolean endOfGame;            		  // boolean indicated whether the end of the game
-												  // has been reached or not
+	public boolean endOfGame;            	      // boolean indicating whether the end of the game
+						      // has been reached or not
 	private String tilesRemaining = "AAAAAAAAAABBCCDDDDEEEEEEEEEEEEEFFGGGHHIIIIIIIII" +
 					"JKLLLLMMNNNNNNOOOOOOOOPPQRRRRRRSSSSTTTTTTUUUUVVWWXYYZ";
 	public String typedWord; // the word that the user types 
@@ -177,7 +177,7 @@ public class ScrappleJr {
 		} // for loop
 
         if (count > 90) { // if the number of characters already used in the 
-						  // master tile array is greater than 90...
+			  // master tile array is greater than 90...
 			for (int v = 0; v < 8; v++) {
 				if (playerTiles[v] == '9') {
 					for (int z = 0; z < 100; z++) {
@@ -208,17 +208,17 @@ public class ScrappleJr {
 			   // tile array is less than 90...
 			for (int a = 0; a < 8; a++) {
 				if (playerTiles[a] == '9') { // if the element of a certain index
-											 // in the playerTiles array is '9', meaning that
-											 // that character has been used, generate a random
-											 // number that picks a random character from the 
-											 // master tile array
+							     // in the playerTiles array is '9', meaning that
+							     // that character has been used, generate a random
+							     // number that picks a random character from the 
+							     // master tile array
 					int pRandom = (int)(Math.random() * ((99) + 1)); // generate random number between 0 and 99
 					while (tilePool[pRandom] == '6' || tilePool[pRandom] == '7'){ // if the element with
-																					// the index of the random number
-																				    // generated is '6' or '7', meaning
-																					// that the character in that spot has
-																					// already been used, generate another
-																					// random number
+												      // the index of the random number
+												      // generated is '6' or '7', meaning
+												      // that the character in that spot has
+												      // already been used, generate another
+												      // random number
 						pRandom = (int)(Math.random() * ((99) + 1));	
 					} // while loop
 					
@@ -292,9 +292,9 @@ public class ScrappleJr {
 	
 	/** This method receieves the word that the user types when prompted
 	 *  to type a word and determines if the word is valid based on a series
-	 * 	of tests. These tests determine if the word is 4-8 characters long,
+	 *  of tests. These tests determine if the word is 4-8 characters long,
 	 *  if the word is created with letters the player given, and if the word
-	 * 	is actually a word according to the provided word list.  
+	 *  is actually a word according to the provided word list.  
 	 */
 	public void getPlayerInput() {
 		boolean match = false; // determines if word inputted is valid
